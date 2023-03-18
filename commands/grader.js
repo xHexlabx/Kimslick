@@ -8,7 +8,7 @@ async function posn(userdata , channel , user ) {
     
     const browser = await puppeteer.launch({
         headless: true,
-        args: ['--no-sandbox'] ,
+        // args: ['--no-sandbox'] ,
         // executablePath: '\\node_modules\\chromium\\lib\\chromium\\chrome-win\\chrome.exe',
         ignoreHTTPSErrors: true,
         
