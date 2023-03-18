@@ -7,7 +7,8 @@ const { CommandType , user } = require("wokcommands");
 async function posn(userdata , channel , user ) {
     
     const browser = await puppeteer.launch({
-        // headless: true,
+        headless: true,
+        args: ['--no-sandbox'] ,
         // executablePath: '\\node_modules\\chromium\\lib\\chromium\\chrome-win\\chrome.exe',
         ignoreHTTPSErrors: true,
         
