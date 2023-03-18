@@ -110,7 +110,7 @@ module.exports = {
 
                 if(btnInt.customId == 'posn'){
 
-                    await mongoose.connect('mongodb+srv://tokyo682:Uraza11!@class.fpbsi.mongodb.net/test', {
+                    await mongoose.connect(`${process.env.MongoURI}`, {
                         keepAlive : true
                     })
 
