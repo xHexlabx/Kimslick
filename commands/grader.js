@@ -8,8 +8,10 @@ async function posn(userdata , channel , user ) {
     
     const browser = await puppeteer.launch({
         // headless: true,
+        args : ['--no-sandbox', '--disable-setuid-sandbox'] ,
         // executablePath: '\\node_modules\\chromium\\lib\\chromium\\chrome-win\\chrome.exe',
         ignoreHTTPSErrors: true,
+        
         // userDataDir: '%userprofile%\\AppData\\Local\\Google\\Chrome\\User Data\\AllowCookies'
       })
 
